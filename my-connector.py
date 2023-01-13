@@ -16,3 +16,4 @@ pets = mycursor.fetchall()
 
 for pet in pets:
     print(pet)
+
