@@ -7,3 +7,12 @@ mydb = mysql.connector.connect(
     port='3306',
     database='petclinic'
 )
+
+mycursor = mydb.cursor()
+
+mycursor.execute('SELECT * FROM pets')
+
+pets = mycursor.fetchall()
+
+for pet in pets:
+    print(pet)
