@@ -9,11 +9,16 @@ mydb = mysql.connector.connect(
 )
 
 mycursor = mydb.cursor()
-
 mycursor.execute('SELECT * FROM pets')
 
 pets = mycursor.fetchall()
-
 for pet in pets:
     print(pet)
 
+
+mycursor = mydb.cursor()
+mycursor.execute('SELECT * FROM owners')
+
+owners = mycursor.fetchall()
+for owner in owners:
+    print(owner)
