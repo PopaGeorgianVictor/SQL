@@ -56,3 +56,13 @@ mycursor.execute("select FirstName, LastName, Title from Employees "
 query4  = mycursor.fetchall()
 for q4 in query4:
     print(q4)
+
+
+'''RETURN ALL EMPLOYEES THAT ARE NOT FROM LONDON, ORDER BY TITLE ASCENDING AND FIRST NAME DESCENDING'''
+
+mycursor.execute("SELECT * FROM Employees "
+                 "WHERE City <> 'London' ORDER BY Title, FirstName desc")
+
+query5  = mycursor.fetchall()
+for q5 in query5:
+    print(q5)
