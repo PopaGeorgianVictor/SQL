@@ -10,9 +10,13 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-mycursor.execute('select * from Employees '
-                 'where Region is null')
+mycursor.execute("select * from Products where ProductName like 'G%'")
 
 query1  = mycursor.fetchall()
 for q1 in query1:
     print(q1)
+
+
+
+
+

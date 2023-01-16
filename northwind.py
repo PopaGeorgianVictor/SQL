@@ -58,6 +58,7 @@ for q4 in query4:
     print(q4)
 
 
+
 '''RETURN ALL EMPLOYEES THAT ARE NOT FROM LONDON, ORDER BY TITLE ASCENDING AND FIRST NAME DESCENDING'''
 
 mycursor.execute("SELECT * FROM Employees "
@@ -72,11 +73,24 @@ for q5 in query5:
 
 '''RETURN ALL EMPLOYEES THAT DON’T HAVE THE REGION SET'''
 
-mycursor.execute('select * from Employees '
-                 'where Region is null')
+mycursor.execute('SELECT * FROM Employees '
+                 'WHERE Region is null')
 
 query5  = mycursor.fetchall()
 for q5 in query5:
     print(q5)
+
+
+
+'''RETURN ALL PRODUCTS THAT HAVE THE NAME STARTING WITH “G”'''
+
+mycursor.execute("SELECT * FROM Products "
+                 "WHERE ProductName LIKE 'G%'")
+
+query6  = mycursor.fetchall()
+for q6 in query6:
+    print(q6)
+
+
 
 
