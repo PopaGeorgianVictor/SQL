@@ -23,7 +23,6 @@ for q1 in query1:
 
 
 
-
 '''RETURN THE PRODUCT NAME, QUANTITY PER UNIT AND UNIT PRICE FOR THE PRODUCTS THAT HAVE AT LEAST 10 UNITS IN STOCK 
 AND THE UNIT PRICE IS LESS THAN 30 DOLARS ORDER BY PRODUCT NAME AND UNIT PRICE '''
 
@@ -241,3 +240,27 @@ mycursor.execute("SELECT TitleOfCourtesy, FirstName, LastName FROM Employees "
 query20 = mycursor.fetchall()
 for q20 in query20:
     print(q20)
+
+
+
+'''RETURN THE TITLE OF COURTESY AND THE FIRST AND LAST NAME OF ALL EMPLOYEES 
+WHOSE TITLE OF COURTESY BEGINS WITH "M" AND IS FOLLOWED BY ANY CHARACTER AND A PERIOD (.)'''
+
+mycursor.execute("SELECT TitleOfCourtesy, FirstName, LastName FROM Employees "
+                 "WHERE TitleOfCourtesy LIKE 'M%'")
+
+query21 = mycursor.fetchall()
+for q21 in query21:
+    print(q21)
+
+
+
+'''RETURN THE TITLE OF COURTESY AND THE FIRST AND LAST NAME OF ALL EMPLOYEES WHOSE TITLE OF COURTESY BEGINS WITH "M" 
+AND IS FOLLOWED BY ANY CHARACTER AND A PERIOD (.)'''
+
+mycursor.execute("SELECT TitleOfCourtesy, FirstName, LastName FROM Employees "
+                 "WHERE TitleOfCourtesy LIKE 'M_.'")
+
+query22 = mycursor.fetchall()
+for q22 in query22:
+    print(q22)

@@ -10,7 +10,8 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-mycursor.execute(" SELECT TitleOfCourtesy, FirstName, LastName FROM Employees WHERE TitleOfCourtesy IN ('Ms.', 'Mrs.')")
+mycursor.execute("SELECT TitleOfCourtesy, FirstName, LastName FROM Employees "
+                 "WHERE TitleOfCourtesy LIKE 'M_.'")
 
 query1  = mycursor.fetchall()
 for q1 in query1:
