@@ -298,7 +298,8 @@ for q30 in query30:
 
 '''RETURN THE FIRST AND LAST NAMES AND CITIES OF EMPLOYEES FROM CITIES OTHER THAN SEATTLE IN THE STATE OF WASHINGTON'''
 
-mycursor.execute("")
+mycursor.execute("SELECT FirstName, LastName, City FROM employees"
+                 "WHERE City <> 'Seattle'  and  Country = 'USA'")
 
 query31 = mycursor.fetchall()
 for q31 in query31:

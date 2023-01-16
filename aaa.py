@@ -9,8 +9,7 @@ mydb = mysql.connector.connect(
 )
 
 mycursor = mydb.cursor()
-mycursor.execute(" SELECT FirstName, LastName, City, Title FROM Employees"
-                 "WHERE (City = 'Seattle' OR City = 'Redmond') AND Title = 'Sales Representative' ")
+mycursor.execute(" SELECT FirstName, LastName, City from employees where City <> 'Seattle'  and  Country = 'USA'")
 
 query30 = mycursor.fetchall()
 for q30 in query30:
