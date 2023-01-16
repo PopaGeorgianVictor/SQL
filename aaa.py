@@ -10,7 +10,7 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-mycursor.execute("select EmployeeID, OrderID, CustomerID, ShippedDate from Orders WHERE ShippedDate > RequiredDate")
+mycursor.execute("select City, CompanyName, ContactName from Customers where City like ('A%') or City like ('B%')")
 
 query1  = mycursor.fetchall()
 for q1 in query1:

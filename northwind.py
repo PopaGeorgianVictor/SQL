@@ -144,3 +144,17 @@ mycursor.execute("SELECT EmployeeID, OrderID, CustomerID, ShippedDate "
 query11 = mycursor.fetchall()
 for q11 in query11:
     print(q11)
+
+
+
+'''RETURN THE CITY, COMPANY NAME, AND CONTACT NAME OF ALL CUSTOMERS WHO ARE IN CITIES THAT BEGIN WITH "A" OR "B“'''
+
+mycursor.execute("SELECT City, CompanyName, ContactName FROM Customers "
+                 "WHERE City LIKE ('A%') or City LIKE ('B%')")
+
+query12 = mycursor.fetchall()
+for q12 in query12:
+    print(q12)
+
+
+''''''
