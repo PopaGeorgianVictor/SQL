@@ -264,3 +264,49 @@ mycursor.execute("SELECT TitleOfCourtesy, FirstName, LastName FROM Employees "
 query22 = mycursor.fetchall()
 for q22 in query22:
     print(q22)
+
+
+
+'''RETURN THE TITLE OF COURTESY AND THE FIRST AND LAST NAME OF ALL EMPLOYEES WHOSE TITLE OF COURTESY IS NOT "MS." OR "MRS.“'''
+
+mycursor.execute("SELECT TitleOfCourtesy, FirstName, LastName FROM Employees "
+                 "WHERE TitleOfCourtesy NOT In ('Ms.', 'Mrs.') ")
+
+query23 = mycursor.fetchall()
+for q23 in query23:
+    print(q23)
+
+
+
+'''RETURN THE FIRST AND LAST NAMES AND BIRTH DATE OF ALL EMPLOYEES BORN IN THE 1950S'''
+
+mycursor.execute("SELECT firstname, lastname, birthdate FROM employees "
+                 "WHERE birthdate BETWEEN '19500101' AND '19591231'  ")
+
+query24 = mycursor.fetchall()
+for q24 in query24:
+    print(q24)
+
+
+
+'''RETURN THE PRODUCT NAME AND SUPPLIER ID FOR ALL PRODUCTS SUPPLIED BY EXOTIC LIQUIDS, GRANDMA KELLY'S HOMESTEAD, AND TOKYO TRADERS. 
+HINT: YOU WILL NEED TO FIRST DO A SEPARATE SELECT ON THE SUPPLIERS TABLE TO FIND THE SUPPLIER IDS OF THESE THREE COMPANIES.'''
+
+
+mycursor.execute("SELECT ProductName, SupplierID FROM Products "
+                 "WHERE SupplierID in (1, 3, 4 )")
+
+query25 = mycursor.fetchall()
+for q25 in query25:
+    print(q25)
+
+
+
+'''RETURN THE SHIPPING POSTAL CODE, ORDER ID, AND ORDER DATE FOR ALL ORDERS WITH A SHIP POSTAL CODE BEGINNING WITH "02389"'''
+
+mycursor.execute("SELECT ShipPostalCode, OrderID, OrderDate FROM Orders "
+                 "WHERE ShipPostalCode >= '02389'")
+
+query26 = mycursor.fetchall()
+for q26 in query26:
+    print(q26)
