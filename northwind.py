@@ -122,3 +122,25 @@ mycursor.execute("SELECT OrderDate, ShippedDate, CustomerID, Freight FROM Orders
 query9 = mycursor.fetchall()
 for q9 in query9:
     print(q9)
+
+
+
+'''RETURN FIRST NAME, LAST NAME, AND COUNTRY OF ALL EMPLOYEES THAT ARE NOT IN THE UNITED STATES'''
+
+mycursor.execute("SELECT FirstName, LastName, Country FROM Employees "
+                 "WHERE Country <> 'USA'")
+
+query10 = mycursor.fetchall()
+for q10 in query10:
+    print(q10)
+
+
+
+'''RETURN THE EMPLOYEE ID, ORDER ID, CUSTOMER ID, SHIPPED DATE OF ALL ORDERS THAT WERE SHIPPED LATER THAN THEY WERE REQUIRED'''
+
+mycursor.execute("SELECT EmployeeID, OrderID, CustomerID, ShippedDate "
+                 "FROM Orders WHERE ShippedDate > RequiredDate")
+
+query11 = mycursor.fetchall()
+for q11 in query11:
+    print(q11)

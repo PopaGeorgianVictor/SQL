@@ -10,7 +10,7 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-mycursor.execute("select OrderDate, ShippedDate, CustomerID, Freight from Orders where OrderDate = '1997-05-19'")
+mycursor.execute("select EmployeeID, OrderID, CustomerID, ShippedDate from Orders WHERE ShippedDate > RequiredDate")
 
 query1  = mycursor.fetchall()
 for q1 in query1:
