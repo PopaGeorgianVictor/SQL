@@ -197,3 +197,36 @@ mycursor.execute("SELECT FirstName, LastName FROM Employees "
 query16 = mycursor.fetchall()
 for q16 in query16:
     print(q16)
+
+
+'''RETURN THE COMPANY NAME, CONTACT NAME AND FAX NUMBER OF ALL CUSTOMERS THAT HAVE A FAX NUMBER; SORT BY COMPANY NAME'''
+
+mycursor.execute("SELECT CompanyName, ContactName , Fax FROM Customers "
+                 "WHERE Fax is Not NULL Order by CompanyName")
+
+query17 = mycursor.fetchall()
+for q17 in query17:
+    print(q17)
+
+
+
+'''RETURN THE CITY, COMPANY NAME, AND CONTACT NAME OF ALL CUSTOMERS WHO ARE IN CITIES THAT BEGIN WITH "A" OR "B";
+SORT BY CONTACT NAME DESCENDING'''
+
+mycursor.execute("SELECT City, CompanyName, ContactName FROM Customers "
+                 "WHERE City like ('A%') or City like ('B%') Order by ContactName DESC")
+
+query18 = mycursor.fetchall()
+for q18 in query18:
+    print(q18)
+
+
+
+'''RETURN THE FIRST AND LAST NAME OF ALL EMPLOYEES WHOSE LAST NAMES START WITH A LETTER BETWEEN "J" AND "M"'''
+
+mycursor.execute("SELECT LastName, FirstName FROM Employees "
+                 "WHERE LastName BETWEEN 'J' AND 'M'")
+
+query19 = mycursor.fetchall()
+for q19 in query19:
+    print(q19)

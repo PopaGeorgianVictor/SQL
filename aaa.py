@@ -10,7 +10,7 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-mycursor.execute(" select FirstName, LastName from Employees where ReportsTo is NULL")
+mycursor.execute(" SELECT LastName, FirstName FROM Employees WHERE LastName BETWEEN 'J' AND 'M'")
 
 query1  = mycursor.fetchall()
 for q1 in query1:
