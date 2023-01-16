@@ -175,3 +175,25 @@ mycursor.execute("SELECT ProductName, UnitsInStock, UnitsOnOrder, ReorderLevel F
 query14 = mycursor.fetchall()
 for q14 in query14:
     print(q14)
+
+
+
+'''RETURN THE COMPANY NAME, CONTACT NAME AND FAX NUMBER OF ALL CUSntactName,HAVE A FAX NUMBER'''
+
+mycursor.execute("SELECT CompanyName, ContactName, Fax FROM Customers"
+                 " WHERE Fax <> NULL")
+
+query15 = mycursor.fetchall()
+for q15 in query15:
+    print(q15)
+
+
+
+'''RETURN THE FIRST AND LAST NAME OF ALL EMPLOYEES WHO DO NOT REPORT TO ANYBODY'''
+
+mycursor.execute("SELECT FirstName, LastName FROM Employees "
+                 "WHERE ReportsTo is NULL")
+
+query16 = mycursor.fetchall()
+for q16 in query16:
+    print(q16)
