@@ -66,3 +66,17 @@ mycursor.execute("SELECT * FROM Employees "
 query5  = mycursor.fetchall()
 for q5 in query5:
     print(q5)
+
+
+
+
+'''RETURN ALL EMPLOYEES THAT DON’T HAVE THE REGION SET'''
+
+mycursor.execute('select * from Employees '
+                 'where Region is null')
+
+query5  = mycursor.fetchall()
+for q5 in query5:
+    print(q5)
+
+
