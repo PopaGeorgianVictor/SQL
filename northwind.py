@@ -230,3 +230,14 @@ mycursor.execute("SELECT LastName, FirstName FROM Employees "
 query19 = mycursor.fetchall()
 for q19 in query19:
     print(q19)
+
+
+
+'''CREATE A REPORT SHOWING THE TITLE OF COURTESY AND THE FIRST AND LAST NAME OF ALL EMPLOYEES WHOSE TITLE OF COURTESY IS "MRS." OR "MS."'''
+
+mycursor.execute("SELECT TitleOfCourtesy, FirstName, LastName FROM Employees "
+                 "WHERE TitleOfCourtesy IN ('Ms.', 'Mrs.')")
+
+query20 = mycursor.fetchall()
+for q20 in query20:
+    print(q20)
