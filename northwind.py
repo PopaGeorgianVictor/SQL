@@ -261,60 +261,229 @@ for q26 in query26:
 
 '''RETURN THE CONTACT NAME AND TITLE AND THE COMPANY NAME FOR ALL CUSTOMERS WHOSE CONTACT TITLE DOES NOT CONTAIN THE WORD "SALES".'''
 
+mycursor.execute("")
+
+query27 = mycursor.fetchall()
+for q27 in query27:
+    print(q27)
+
 '''RETURN THE FIRST AND LAST NAME OF ALL SALES REPRESENTATIVES WHOSE TITLE OF COURTESY IS "MR."'''
+
+mycursor.execute("")
+
+query28 = mycursor.fetchall()
+for q28 in query28:
+    print(q28)
 
 '''RETURN THE FIRST AND LAST NAME AND THE CITY OF ALL EMPLOYEES WHO ARE FROM SEATTLE OR REDMOND'''
 
+mycursor.execute("")
+
+query29 = mycursor.fetchall()
+for q29 in query29:
+    print(q29)
+
 '''RETURN THE FIRST AND LAST NAME OF ALL SALES REPRESENTATIVES WHO ARE FROM SEATTLE OR REDMOND'''
 
+mycursor.execute("")
+
+query30 = mycursor.fetchall()
+for q30 in query30:
+    print(q30)
+
 '''RETURN THE FIRST AND LAST NAMES AND CITIES OF EMPLOYEES FROM CITIES OTHER THAN SEATTLE IN THE STATE OF WASHINGTON'''
+
+mycursor.execute("")
+
+query31 = mycursor.fetchall()
+for q31 in query31:
+    print(q31)
 
 '''RETURN THE COMPANY NAME, CONTACT TITLE, CITY AND COUNTRY OF ALL CUSTOMERS IN MEXICO OR IN ANY CITY IN SPAIN EXCEPT MADRID.
 RETURN THE FULL NAME OF ALL EMPLOYEES'''
 
+mycursor.execute("")
+
+query32 = mycursor.fetchall()
+for q32 in query32:
+    print(q32)
+
 '''IF THE COST OF FREIGHT IS GREATER THAN OR EQUAL TO $500.00, IT WILL NOW BE TAXED BY 10%. RETURN THE ORDER ID, FREIGHT COST, FREIGHT COST WITH THIS TAX FOR ALL ORDERS OF $500 OR MORE.'''
+
+mycursor.execute("")
+
+query33 = mycursor.fetchall()
+for q33 in query33:
+    print(q33)
 
 '''Return all the orders and products ordered by all customers in April 1998. Return the
 order ID, date of order, the product name, the customer first name and last name and quantity ordered for each product'''
 
+mycursor.execute("")
+
+query34 = mycursor.fetchall()
+for q34 in query34:
+    print(q34)
+
 '''Return the biggest list price of the products sold after 1998-04-01 (including this date).'''
+
+mycursor.execute("")
+
+query35 = mycursor.fetchall()
+for q35 in query35:
+    print(q35)
 
 '''Return for each customer return the number of orders in March 1998 and those orders total Freight value'''
 
+mycursor.execute("")
+
+query36 = mycursor.fetchall()
+for q36 in query36:
+    print(q36)
+
 '''Return which products were not ordered'''
+
+mycursor.execute("")
+
+query37 = mycursor.fetchall()
+for q37 in query37:
+    print(q37)
 
 '''Return the number of products from each category'''
 
+mycursor.execute("")
+
+query38 = mycursor.fetchall()
+for q38 in query38:
+    print(q38)
+
 '''Return the order ids and the associated employee names for orders that were shipped after the required date'''
+
+mycursor.execute("")
+
+query39 = mycursor.fetchall()
+for q39 in query39:
+    print(q39)
+
 
 '''Return the total quantity of products ordered. Only show records for products for which the quantity ordered is fewer than 200'''
 
+mycursor.execute("")
+
+query40 = mycursor.fetchall()
+for q40 in query40:
+    print(q40)
+
 '''Return the total number of orders by Customer since December 31, 1996. Return rows for which the number of orders is greater than 15'''
 
+mycursor.execute("")
+
+query41 = mycursor.fetchall()
+for q41 in query41:
+    print(q41)
+
 '''Return the company name, order id, and total price of all products of more than $10,000 worth'''
+
+mycursor.execute("")
+
+query42 = mycursor.fetchall()
+for q42 in query42:
+    print(q42)
 
 '''Return the Order ID, the name of the company that placed the order, and the first and last name of the associated employee.
 Only show orders placed after January 1, 1998 that shipped after they were required. Sort by Company Name'''
 
+mycursor.execute("")
+
+query43 = mycursor.fetchall()
+for q43 in query43:
+    print(q43)
+
 '''Return the list of products that are beverages'''
+
+mycursor.execute("")
+
+query44 = mycursor.fetchall()
+for q44 in query44:
+    print(q44)
 
 '''Return the matching Customers and Suppliers by Country'''
 
+mycursor.execute("")
+
+query45 = mycursor.fetchall()
+for q45 in query45:
+    print(q45)
+
 '''Return the Customers that are from the same City and Country'''
 
+mycursor.execute("")
+
+query46 = mycursor.fetchall()
+for q46 in query46:
+    print(q46)
+
 '''Return the title and name of employees who have sold at least one of the products ‘Gravad Lax’ or ‘Mishi Kobe Niku’'''
+
+mycursor.execute("")
+
+query47 = mycursor.fetchall()
+for q47 in query47:
+    print(q47)
 
 '''Return the customer name, the product name and the supplier name for customers who live in London and whose suppliers
 name is ‘Pavlova, Ltd.’ or ‘Karkki Oy’'''
 
+mycursor.execute("")
+
+query48 = mycursor.fetchall()
+for q48 in query48:
+    print(q48)
+
 '''Return all the orders and products ordered by all customers. Return the order date, the product name, the customer name and the supplier name'''
+
+mycursor.execute("")
+
+query49 = mycursor.fetchall()
+for q49 in query49:
+    print(q49)
 
 '''Return the biggest unit price of products sold to each customer'''
 
+mycursor.execute("")
+
+query50 = mycursor.fetchall()
+for q50 in query50:
+    print(q50)
+
 '''For each customer return the number of orders in the year 1996 and  those orders’ average product order size'''
+
+mycursor.execute("")
+
+query51 = mycursor.fetchall()
+for q51 in query51:
+    print(q51)
 
 '''Return all the customers who have placed orders'''
 
+mycursor.execute("")
+
+query52 = mycursor.fetchall()
+for q52 in query52:
+    print(q52)
+
 '''Return the number of orders and the orders total price for each customer'''
 
+mycursor.execute("")
+
+query53 = mycursor.fetchall()
+for q53 in query53:
+    print(q53)
+
 '''Return the number and the total of orders for each month of each year'''
+
+mycursor.execute("")
+
+query54 = mycursor.fetchall()
+for q54 in query54:
+    print(q54)
