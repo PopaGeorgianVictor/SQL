@@ -100,3 +100,25 @@ mycursor.execute("SELECT * FROM Products "
 query7 = mycursor.fetchall()
 for q7 in query7:
     print(q7)
+
+
+
+'''RETURN ALL THE COMPANY NAMES AND CONTACT NAMES FOR WHICH THE CUSTOMERS ARE IN BUENOS AIRES'''
+
+mycursor.execute("SELECT CompanyName, ContactName FROM Customers "
+                 "WHERE City = 'Buenos Aires' ")
+
+query8 = mycursor.fetchall()
+for q8 in query8:
+    print(q8)
+
+
+
+'''RETURN THE ORDER DATE, SHIPPED DATE, CUSTOMER ID, AND FREIGHT OF ALL ORDERS PLACED ON MAY 19, 1997'''
+
+mycursor.execute("SELECT OrderDate, ShippedDate, CustomerID, Freight FROM Orders "
+                 "WHERE OrderDate = '1997-05-19' ")
+
+query9 = mycursor.fetchall()
+for q9 in query9:
+    print(q9)

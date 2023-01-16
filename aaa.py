@@ -10,7 +10,7 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-mycursor.execute("select * from Products where ProductName like '%an%' or UnitsOnOrder <> 0")
+mycursor.execute("select OrderDate, ShippedDate, CustomerID, Freight from Orders where OrderDate = '1997-05-19'")
 
 query1  = mycursor.fetchall()
 for q1 in query1:
