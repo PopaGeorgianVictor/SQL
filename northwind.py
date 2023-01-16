@@ -261,7 +261,8 @@ for q26 in query26:
 
 '''RETURN THE CONTACT NAME AND TITLE AND THE COMPANY NAME FOR ALL CUSTOMERS WHOSE CONTACT TITLE DOES NOT CONTAIN THE WORD "SALES".'''
 
-mycursor.execute("")
+mycursor.execute("SELECT  ContactName, CompanyName FROM customers "
+                 "WHERE ContactTitle <> 'sales'")
 
 query27 = mycursor.fetchall()
 for q27 in query27:
@@ -269,7 +270,9 @@ for q27 in query27:
 
 '''RETURN THE FIRST AND LAST NAME OF ALL SALES REPRESENTATIVES WHOSE TITLE OF COURTESY IS "MR."'''
 
-mycursor.execute("")
+mycursor.execute("SELECT FirstName, LastName FROM Employees "
+                 "WHERE Title = 'Sales Representative'"
+                 "AND TitleOfCourtesy = 'Mr.' ")
 
 query28 = mycursor.fetchall()
 for q28 in query28:
