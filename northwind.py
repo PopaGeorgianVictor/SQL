@@ -157,4 +157,21 @@ for q12 in query12:
     print(q12)
 
 
-''''''
+'''RETURN ALL ORDERS THAT HAVE A FREIGHT COST OF MORE THAN $500.00'''
+
+mycursor.execute("SELECT * FROM Orders "
+                 "WHERE Freight > 500.00")
+
+query13 = mycursor.fetchall()
+for q13 in query13:
+    print(q13)
+
+
+'''RETURN THE PRODUCT NAME, UNITS IN STOCK, UNITS ON ORDER, AND REORDER LEVEL OF ALL PRODUCTS THAT ARE UP FOR REORDER'''
+
+mycursor.execute("SELECT ProductName, UnitsInStock, UnitsOnOrder, ReorderLevel FROM Products "
+                 "WHERE ReorderLevel > 0")
+
+query14 = mycursor.fetchall()
+for q14 in query14:
+    print(q14)

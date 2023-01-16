@@ -10,7 +10,7 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-mycursor.execute("select City, CompanyName, ContactName from Customers where City like ('A%') or City like ('B%')")
+mycursor.execute("select ProductName, UnitsInStock, UnitsOnOrder, ReorderLevel from Products where ReorderLevel > 0")
 
 query1  = mycursor.fetchall()
 for q1 in query1:
