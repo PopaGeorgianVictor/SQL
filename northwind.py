@@ -17,7 +17,7 @@ mycursor = mydb.cursor()
 mycursor.execute('SELECT ProductName, QuantityPerUnit, UnitPrice FROM Products '
                  'ORDER BY ProductName DESC ')
 
-query1  = mycursor.fetchall()
+query1 = mycursor.fetchall()
 for q1 in query1:
     print(q1)
 
@@ -31,7 +31,7 @@ mycursor.execute('SELECT ProductName, QuantityPerUnit, UnitPrice FROM Products '
                  'WHERE UnitsInStock = 10 AND UnitPrice < 30 '
                  'ORDER BY ProductName, UnitPrice ')
 
-query2  = mycursor.fetchall()
+query2 = mycursor.fetchall()
 for q2 in query2:
     print(q2)
 
@@ -42,7 +42,7 @@ for q2 in query2:
 mycursor.execute('SELECT  LastName, FirstName FROM Employees '
                  'WHERE BirthDate = (SELECT MIN(BirthDate) AS EarliestDate FROM Employees)')
 
-query3  = mycursor.fetchall()
+query3 = mycursor.fetchall()
 for q3 in query3:
     print(q3)
 
@@ -53,7 +53,7 @@ for q3 in query3:
 mycursor.execute("select FirstName, LastName, Title from Employees "
                  "where Title in ('sales representative', 'sales manager')")
 
-query4  = mycursor.fetchall()
+query4 = mycursor.fetchall()
 for q4 in query4:
     print(q4)
 
@@ -64,10 +64,9 @@ for q4 in query4:
 mycursor.execute("SELECT * FROM Employees "
                  "WHERE City <> 'London' ORDER BY Title, FirstName desc")
 
-query5  = mycursor.fetchall()
+query5 = mycursor.fetchall()
 for q5 in query5:
     print(q5)
-
 
 
 
@@ -76,7 +75,7 @@ for q5 in query5:
 mycursor.execute('SELECT * FROM Employees '
                  'WHERE Region is null')
 
-query5  = mycursor.fetchall()
+query5 = mycursor.fetchall()
 for q5 in query5:
     print(q5)
 
@@ -87,10 +86,17 @@ for q5 in query5:
 mycursor.execute("SELECT * FROM Products "
                  "WHERE ProductName LIKE 'G%'")
 
-query6  = mycursor.fetchall()
+query6 = mycursor.fetchall()
 for q6 in query6:
     print(q6)
 
 
 
+'''RETURN ALL PRODUCTS THAT HAVE THE NAME CONTAINING “AN” OR HAVE UNITS ON ORDER DIFFERENT FROM 0'''
 
+mycursor.execute("SELECT * FROM Products "
+                 "WHERE ProductName LIKE '%an%' OR UnitsOnOrder <> 0")
+
+query7 = mycursor.fetchall()
+for q7 in query7:
+    print(q7)
