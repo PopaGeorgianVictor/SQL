@@ -9,8 +9,12 @@ mydb = mysql.connector.connect(
 )
 
 mycursor = mydb.cursor()
-mycursor.execute(" SELECT FirstName, LastName, City from employees where City <> 'Seattle'  and  Country = 'USA'")
+
+
+mycursor.execute(" SELECT OrderID, Freight, Freight * 1.1 FROM Orders "
+                 "WHERE Freight >= 500 ")
 
 query30 = mycursor.fetchall()
 for q30 in query30:
     print(q30)
+

@@ -306,9 +306,10 @@ for q31 in query31:
     print(q31)
 
 '''RETURN THE COMPANY NAME, CONTACT TITLE, CITY AND COUNTRY OF ALL CUSTOMERS IN MEXICO OR IN ANY CITY IN SPAIN EXCEPT MADRID.
-RETURN THE FULL NAME OF ALL EMPLOYEES'''
+'''
 
-mycursor.execute("")
+mycursor.execute("SELECT CompanyName, ContactTitle, City, Country FROM Customers "
+                 "WHERE Country IN ('Mexico', 'Spain') AND City <> 'Madrid'")
 
 query32 = mycursor.fetchall()
 for q32 in query32:
@@ -316,7 +317,8 @@ for q32 in query32:
 
 '''IF THE COST OF FREIGHT IS GREATER THAN OR EQUAL TO $500.00, IT WILL NOW BE TAXED BY 10%. RETURN THE ORDER ID, FREIGHT COST, FREIGHT COST WITH THIS TAX FOR ALL ORDERS OF $500 OR MORE.'''
 
-mycursor.execute("")
+mycursor.execute("SELECT OrderID, Freight, Freight * 1.1 FROM Orders "
+                 "WHERE Freight >= 500 ")
 
 query33 = mycursor.fetchall()
 for q33 in query33:
