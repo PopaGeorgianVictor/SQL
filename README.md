@@ -1,7 +1,12 @@
 
 ### Cheat Sheet
 
+<i>
+
 https://www.mysqltutorial.org/
+
+https://dev.mysql.com/
+</i>
 
 ## Running MySQL Queries In Python
 
