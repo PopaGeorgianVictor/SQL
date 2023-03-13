@@ -1,4 +1,5 @@
 
+## Running MySQL Queries In Python
 ### Cheat Sheet
 
 <i>
@@ -21,10 +22,6 @@ https://dev.mysql.com/
 <img src ="https://i.postimg.cc/zXBkmgWM/6.jpg">
 
 <img src ="https://i.postimg.cc/MHG18CcR/7.jpg">
-
-## Running MySQL Queries In Python
-
-![](https://media.tenor.com/NN9_wWaCxx8AAAAi/mysql.gif)
 
 ### Data Base Used : 
 
