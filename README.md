@@ -16,7 +16,11 @@ https://dev.mysql.com/
 
 <img src ="https://i.postimg.cc/BnCZxX7S/4.jpg">
 
-<img src ="">
+<img src ="https://i.postimg.cc/1RMKYHgw/5.jpg">
+
+<img src ="https://i.postimg.cc/zXBkmgWM/6.jpg">
+
+<img src ="https://i.postimg.cc/MHG18CcR/7.jpg">
 
 ## Running MySQL Queries In Python
 
