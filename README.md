@@ -8,6 +8,8 @@ https://www.mysqltutorial.org/
 https://dev.mysql.com/
 </i>
 
+<img src ="https://i.postimg.cc/xCw6jT2H/1.jpg">
+
 ## Running MySQL Queries In Python
 
 ![](https://media.tenor.com/NN9_wWaCxx8AAAAi/mysql.gif)
