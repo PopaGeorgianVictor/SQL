@@ -10,6 +10,14 @@ https://dev.mysql.com/
 
 <img src ="https://i.postimg.cc/xCw6jT2H/1.jpg">
 
+<img src ="https://i.postimg.cc/k440R5zp/2.jpg">
+
+<img src ="https://i.postimg.cc/XNZvTNqL/3.jpg">
+
+<img src ="https://i.postimg.cc/BnCZxX7S/4.jpg">
+
+<img src ="">
+
 ## Running MySQL Queries In Python
 
 ![](https://media.tenor.com/NN9_wWaCxx8AAAAi/mysql.gif)
