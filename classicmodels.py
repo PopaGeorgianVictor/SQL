@@ -16,9 +16,9 @@ mycursor = mydb.cursor()
 
 mycursor.execute('show tables')
 
-query1 = mycursor.fetchall()
-for q1 in query1:
-    print(q1)
+query = mycursor.fetchall()
+for q in query:
+    print(q)
 
 
     
@@ -26,6 +26,53 @@ for q1 in query1:
 
 mycursor.execute('SELECT count(*) AS NumbersOfColumns FROM information_schema.columns WHERE table_name = "customers" ')
 
-query1 = mycursor.fetchall()
-for q1 in query1:
-    print(q1)
+query = mycursor.fetchall()
+for q in query:
+    print(q)
+
+
+
+    '''Check  column names in a table'''
+
+mycursor.execute('SELECT column_name FROM information_schema.columns where table_name = "customers"')
+
+query = mycursor.fetchall()
+for q in query:
+    print(q)
+
+
+
+    '''Check  data type of columns  in  table'''
+
+mycursor.execute('SELECT column_name,data_type FROM information_schema.columns where table_name = "customers"')
+
+query = mycursor.fetchall()
+for q in query:
+    print(q)
+
+
+    '''Check  size of columns  in  table'''
+
+mycursor.execute('SELECT column_name,column_type FROM information_schema.columns where table_name = "customers"')
+
+query = mycursor.fetchall()
+for q in query:
+    print(q)
+
+
+    '''Check  nulls fields  in  table'''
+
+mycursor.execute('SELECT column_name,is_nullable FROM information_schema.columns where table_name = "customers"')
+
+query = mycursor.fetchall()
+for q in query:
+    print(q)
+
+    
+    '''Check  column keys  in  table'''
+
+mycursor.execute('SELECT column_name,column_key FROM information_schema.columns where table_name = "customers"')
+
+query = mycursor.fetchall()
+for q in query:
+    print(q)
