@@ -81,14 +81,21 @@ for q in query:
     #Stored Procedure
 
 
-mycursor.execute('delimiter //'
+# mycursor.execute('delimiter //'
                  
-                'create procedure SelectAllCustomers()'
-                 'Begin'
-                    'select * from customers;'
-                 'End //'
-                 
-                 'delimiter ;')
+#                 'create procedure SelectAllCustomers()'
+#                  'Begin'
+#                     'select * from customers;'
+#                  'End //'
+
+#                  'delimiter ;')
+
+# query = mycursor.fetchall()
+# for q in query:
+#     print(q)
+
+
+mycursor.execute('call SelectAllCustomers()')
 
 query = mycursor.fetchall()
 for q in query:
