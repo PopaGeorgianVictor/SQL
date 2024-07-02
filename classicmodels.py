@@ -76,3 +76,20 @@ mycursor.execute('SELECT column_name,column_key FROM information_schema.columns 
 query = mycursor.fetchall()
 for q in query:
     print(q)
+
+
+    #Stored Procedure
+
+
+mycursor.execute('delimiter //'
+                 
+                'create procedure SelectAllCustomers()'
+                 'Begin'
+                    'select * from customers;'
+                 'End //'
+                 
+                 'delimiter ;')
+
+query = mycursor.fetchall()
+for q in query:
+    print(q)
