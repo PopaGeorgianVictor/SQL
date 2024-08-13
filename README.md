@@ -68,6 +68,8 @@ https://dev.mysql.com/
 
 <img src ="https://i.postimg.cc/dQRrYP1h/Screenshot-2.png">
 
+### Stored Function
+
 <img src ="https://i.postimg.cc/5yD4nymG/Screenshot-1.png">
 
 
