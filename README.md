@@ -1,6 +1,6 @@
 
-## Running MySQL Queries In Python
-### Cheat Sheet
+# Running MySQL Queries In Python
+## Cheat Sheet
 
 <i>
 
@@ -23,12 +23,12 @@ https://dev.mysql.com/
 
 <img src ="https://i.postimg.cc/MHG18CcR/7.jpg">
 
-### Data Base Used : 
+## Data Base Used : 
 
 
 ![](https://i.ytimg.com/vi/vzU7hLK6jcc/mqdefault.jpg)
 
-### ClassicModels
+## ClassicModels
 
 <img src ="https://i.postimg.cc/nh5qdWWd/Untitled.png">
 
@@ -48,7 +48,7 @@ https://dev.mysql.com/
 
 <img src ="https://i.postimg.cc/VsWLsHjd/Screenshot-4.png">
 
-### Stored Procedure
+## Stored Procedure
 
 <img src ="https://i.postimg.cc/RZnQDssZ/Screenshot-4.png">
 
@@ -68,7 +68,7 @@ https://dev.mysql.com/
 
 <img src ="https://i.postimg.cc/dQRrYP1h/Screenshot-2.png">
 
-### Stored Function
+## Stored Function
 
 <img src ="https://i.postimg.cc/5yD4nymG/Screenshot-1.png">
 
