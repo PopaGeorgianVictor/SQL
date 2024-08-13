@@ -174,3 +174,26 @@ for q in query:
 # END //
 
 # delimiter ;
+
+
+#Stored Function
+
+
+# delimiter //
+
+# CREATE FUNCTION CustomerLevel (credit Decimal(10,2)) returns varchar(20)
+# DETERMINISTIC
+# begin
+# 	declare customerLevel varchar(20);
+# 	IF credit > 50000 THEN
+# 		SET customerLevel = 'PLATINUM';
+# 	ELSEIF (credit >= 10000 AND
+# 			credit <= 50000) THEN
+# 		SET customerLevel = 'GOLD'; 
+# 	ELSEIF credit < 10000 THEN
+# 		SET customerLevel = 'SILVER';
+# 	END IF;
+# 	return customerLevel;
+# end //
+
+# delimiter ;
