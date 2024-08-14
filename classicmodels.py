@@ -197,3 +197,14 @@ for q in query:
 # end //
 
 # delimiter ;
+
+# Trigger
+
+# DROP TABLE IF EXISTS WorkCenters; DROP TABLE IF EXISTS WorkCenterStats;
+# CREATE TABLE WorkCenters (
+# 	id INT AUTO_INCREMENT PRIMARY KEY, 
+# 	name VARCHAR(100) NOT NULL, 
+# 	capacity INT NOT NULL);
+# CREATE TABLE WorkCenterStats( 
+#    totalCapacity INT NOT NULL
+# );
