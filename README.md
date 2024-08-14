@@ -76,6 +76,11 @@ https://dev.mysql.com/
 
 <img src ="https://i.postimg.cc/SN5TNCBX/Screenshot-4.png">
 
+## Trigger
+
+<img src ="https://i.postimg.cc/rpY9ytZn/Screenshot-5.png">
+
+<img src ="https://i.postimg.cc/Px0Jqtjn/Screenshot-6.png">
 
 
 
