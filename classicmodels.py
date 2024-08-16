@@ -258,3 +258,10 @@ for q in query:
 # 	END IF;
 # END//
 # delimiter ;
+
+
+# INSERT INTO members (name, email, birthDate) VALUES ('John', 'john@example.com', NULL);
+# INSERT INTO members (name, email, birthDate) VALUES ('Kim', 'kim@example.com', '2012-05-03');
+
+# select * from members;
+# select * from reminders
