@@ -200,6 +200,8 @@ for q in query:
 
 # Trigger
 
+# Before insert
+
 # DROP TABLE IF EXISTS WorkCenters; DROP TABLE IF EXISTS WorkCenterStats;
 # CREATE TABLE WorkCenters (
 # 	id INT AUTO_INCREMENT PRIMARY KEY, 
@@ -230,3 +232,29 @@ for q in query:
 # select * from WorkCenters;
 # INSERT INTO WorkCenters(name, capacity) VALUES('Packing', 200);
 # select * from workcenterstats;
+
+
+# After insert
+
+
+# CREATE TABLE members (
+# 	id INT AUTO_INCREMENT, name VARCHAR(100) NOT NULL,
+# 	email VARCHAR(255),
+# 	birthDate
+# 	DATE,
+# 	PRIMARY KEY (id)
+# );
+# CREATE TABLE reminders (
+# 	id INT AUTO_INCREMENT, memberId INT,
+# 	message VARCHAR(255) NOT NULL, 
+#     PRIMARY KEY (id, memberId)
+# );
+
+# delimiter //
+# CREATE TRIGGER after_members_insert AFTER INSERT ON members FOR EACH ROW 
+# BEGIN
+# 	IF NEW.birthDate IS NULL THEN INSERT INTO reminders (memberId, message)
+# 		VALUES (new.id, CONCAT('Hi', NEW. name, ', please update your date of birth.')); 
+# 	END IF;
+# END//
+# delimiter ;
