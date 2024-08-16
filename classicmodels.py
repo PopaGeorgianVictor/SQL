@@ -224,9 +224,9 @@ for q in query:
 
 # delimiter ;
 
+# Testing Triggers
+
 # INSERT INTO WorkCenters(name, capacity) VALUES('Mold Machine', 100);
-
 # select * from WorkCenters;
-# select * from workcenterstats;
-
 # INSERT INTO WorkCenters(name, capacity) VALUES('Packing', 200);
+# select * from workcenterstats;
