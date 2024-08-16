@@ -223,3 +223,10 @@ for q in query:
 # END //
 
 # delimiter ;
+
+# INSERT INTO WorkCenters(name, capacity) VALUES('Mold Machine', 100);
+
+# select * from WorkCenters;
+# select * from workcenterstats;
+
+# INSERT INTO WorkCenters(name, capacity) VALUES('Packing', 200);
